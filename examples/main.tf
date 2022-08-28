@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "prag-matic"
+
+    workspaces {
+      name = "custom-devops"
+    }
+  }
   required_providers {
     azdotf = {
       version = "0.1.0"
@@ -7,10 +14,6 @@ terraform {
   }
 }
 
-provider "azdotf" {
-    org_service_url = ""
-    personal_access_token = ""
-}
 
 #data "azdotf_projects" "all_projects" {}
 #
