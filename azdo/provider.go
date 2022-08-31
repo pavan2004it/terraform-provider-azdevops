@@ -14,8 +14,8 @@ func Provider() *schema.Provider {
 			"azdo_project": core2.ResourceProject(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
-			"azdo_projects": core2.DataProjects(),
-			"azdo_project":  core2.DataProject(),
+			"azdo_projects":  core2.DataProjects(),
+			"azdoDO_project": core2.DataProject(),
 		},
 		Schema: map[string]*schema.Schema{
 			"org_service_url": {
