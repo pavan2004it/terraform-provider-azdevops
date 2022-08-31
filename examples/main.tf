@@ -1,19 +1,19 @@
 terraform {
 
   required_providers {
-    azdotf = {
-      version = "0.1.0"
-      source  = "hashicorp.com/azdo/azdotf"
+    azdo = {
+      version = "1.0.0"
+      source  = "hashicorp.com/azdo/azdo"
     }
   }
 }
 
 
-data "azdotf_projects" "all_projects" {}
+data "azdo_projects" "all_projects" {}
 
 output "project_details" {
   value = {
-    for key,project in data.azdotf_projects.all_projects.projects :
+    for key,project in data.azdo_projects.all_projects.projects :
     key => project
   }
 }
