@@ -1,9 +1,13 @@
 TEST?=$$(go list ./... | grep -v 'vendor')
 HOSTNAME=hashicorp.com
 NAMESPACE=azdo
-NAME=azdotf
+NAME=azdo
 BINARY=terraform-provider-${NAME}
+<<<<<<< HEAD
 VERSION=0.1.5
+=======
+VERSION=1.0.0
+>>>>>>> db32aeb (Added sample usage)
 OS_ARCH=darwin_amd64
 
 default: install

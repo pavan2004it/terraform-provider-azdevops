@@ -1,4 +1,4 @@
-module azdoTf
+module azdo
 
 go 1.18
 

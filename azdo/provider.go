@@ -1,8 +1,8 @@
-package azdotf
+package azdo
 
 import (
-	"azdoTf/azdotf/client"
-	core2 "azdoTf/azdotf/core"
+	"azdo/azdo/client"
+	core2 "azdo/azdo/core"
 	"context"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
@@ -11,11 +11,11 @@ import (
 func Provider() *schema.Provider {
 	return &schema.Provider{
 		ResourcesMap: map[string]*schema.Resource{
-			"azdotf_project": core2.ResourceProject(),
+			"azdo_project": core2.ResourceProject(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
-			"azdotf_projects": core2.DataProjects(),
-			"azdotf_project":  core2.DataProject(),
+			"azdo_projects": core2.DataProjects(),
+			"azdo_project":  core2.DataProject(),
 		},
 		Schema: map[string]*schema.Schema{
 			"org_service_url": {

@@ -1,9 +1,9 @@
 package core
 
 import (
-	"azdoTf/azdotf/client"
-	"azdoTf/utils"
-	"azdoTf/utils/converter"
+	"azdo/azdo/client"
+	"azdo/utils"
+	"azdo/utils/converter"
 	"context"
 	"fmt"
 	"github.com/google/uuid"

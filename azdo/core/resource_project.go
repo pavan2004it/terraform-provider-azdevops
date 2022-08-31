@@ -1,8 +1,8 @@
 package core
 
 import (
-	"azdoTf/azdotf/client"
-	"azdoTf/utils/converter"
+	"azdo/azdo/client"
+	"azdo/utils/converter"
 	"context"
 	"errors"
 	"fmt"

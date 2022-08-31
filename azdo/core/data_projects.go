@@ -1,7 +1,7 @@
 package core
 
 import (
-	"azdoTf/azdotf/client"
+	"azdo/azdo/client"
 	"context"
 	"crypto/sha1"
 	"encoding/base64"

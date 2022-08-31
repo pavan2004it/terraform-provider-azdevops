@@ -5,6 +5,6 @@ provider "hashicorp.com/azdo/azdotf" {
   version     = "0.1.0"
   constraints = "0.1.0"
   hashes = [
-    "h1:7htlufjY8STvjUlU+uH1eq9tjoN2sXBV9zst8fHy0+8=",
+    "h1:aMCzoKDsO+3k6cZaEsr//XsuWpBjmM6XAd7NF1DaE1I=",
   ]
 }
